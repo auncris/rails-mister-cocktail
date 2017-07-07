@@ -8,7 +8,7 @@
               <%= dose.description %> of <%=dose.ingredient.name %>
           </h5>
       <% end %>
-       <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+       <%= cl_image_tag @cocktail.photo, height: 500, width: 400, crop: :fill %>
       <ul class = "list-inline">
         <li><%= link_to 'Add Ingredients', new_cocktail_dose_path(@cocktail) %></li>
         <li><%= link_to 'Delete cocktail',  @cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></li>

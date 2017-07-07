@@ -13,7 +13,6 @@ class DosesController < ApplicationController
     @dose.description = params_dose['description']
     @dose.ingredient = Ingredient.find(params_dose[:ingredient_id])
     @dose.cocktail = Cocktail.find(params[:cocktail_id])
-    @dose.cocktail = @cocktail
     if @dose.save
       redirect_to cocktail_path(@cocktail)
     else
