@@ -26,6 +26,7 @@ class CocktailsController < ApplicationController
   end
 
   def update
+
   end
 
   def destroy
@@ -38,7 +39,8 @@ class CocktailsController < ApplicationController
   def set_cocktail
     @cocktail = Cocktail.find(params[:id])
   end
+
   def cocktail_params
-      params.require(:cocktail).permit(:name)
+      params.require(:cocktail).permit(:name, :photo, :photo_cache)
   end
 end
