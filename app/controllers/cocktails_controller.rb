@@ -30,7 +30,7 @@ class CocktailsController < ApplicationController
 
   def destroy
     set_cocktail
-    @contail.destroy
+    @cocktail.destroy
     redirect_to cocktails_path
   end
 

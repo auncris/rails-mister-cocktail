@@ -21,4 +21,11 @@ Ingredient.create(name: "vodka")
 Ingredient.create(name: "rum")
 Ingredient.create(name: "red bull")
 Ingredient.create(name: "jagermaister")
+Ingredient.create(name: "salt")
+Ingredient.create(name: "Cubed ice")
+Ingredient.create(name: "Tequila")
+Ingredient.create(name: "Triple Sec")
+Ingredient.create(name: "Lime juice")
+
+
 

@@ -1,11 +1,23 @@
-<h1><%= @cocktail.name %></h1>
-<h3> Ingredients </h3>
+<div class = "container text-center">
+  <div class = row>
+    <div class="col-md-12">
+      <h1><%= @cocktail.name  %> <i class="fa fa-glass" aria-hidden="true"></i> </h1>
+      <h4> What you will need: </h4>
+         <% @cocktail.doses.each do |dose| %>
+            <h5><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                </i> <%= dose.description %> of <%=dose.ingredient.name %>
+            </h5>
+      <% end %>
 
-<% @cocktail.doses.each do |dose| %>
-<h3><%= dose.description %></h3>
-<h3><%= dose.ingredient.name %></h3>
-<p><%= link_to "Delete Cocktail", cocktails_path %></p>
-<% end %>
+      <ul class = "list-inline">
+        <li><%= link_to 'Add Ingredients', new_cocktail_dose_path(@cocktail) %></li>
+        <li><%= link_to 'Delete cocktail',  @cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      </ul>
+
+      <h5><%= link_to 'Back', cocktails_path %> </h5>
+    </div>
+  </div>
+</div>
 
 
 
