@@ -26,6 +26,10 @@ Ingredient.create(name: "Cubed ice")
 Ingredient.create(name: "Tequila")
 Ingredient.create(name: "Triple Sec")
 Ingredient.create(name: "Lime juice")
+Ingredient.create(name: "Wine")
+Ingredient.create(name: "Brandy")
+Ingredient.create(name: "Pomegranate juice.")
+Ingredient.create(name: "Fruit slices.")
 
 
 
